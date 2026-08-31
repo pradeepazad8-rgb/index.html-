@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blesson Convent High School | Tundri</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#f5f7fb;
+  color:#222;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  background:#083b7a;
+  color:white;
+  padding:12px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo{
+  width:65px;
+  height:65px;
+  border-radius:50%;
+  background:white;
+  color:#083b7a;
+  border:4px solid #f4c542;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.brand h1{
+  font-size:22px;
+}
+
+.brand p{
+  font-size:12px;
+}
+
+nav{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#f4c542;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(8,59,122,.85),rgba(8,59,122,.85));
+  color:white;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  background:#f4c542;
+  color:#222;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+  margin:5px;
+}
+
+/* GENERAL */
+section{
+  padding:60px 8%;
+}
+
+.section-title{
+  text-align:center;
+  color:#083b7a;
+  margin-bottom:35px;
+  font-size:30px;
+}
+
+.center{
+  text-align:center;
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.card{
+  background:white;
+  width:300px;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.card h3{
+  color:#083b7a;
+  margin-bottom:10px;
+}
+
+/* PRINCIPAL */
+.principal{
+  max-width:800px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.gallery-item{
+  height:220px;
+  background:#ddd;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#666;
+  overflow:hidden;
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* NOTICE */
+.notice{
+  max-width:800px;
+  margin:auto;
+  background:#fff8d8;
+  padding:20px;
+  border-left:5px solid #f4c542;
+  border-radius:8px;
+}
+
+/* FORMS */
+.form-box{
+  max-width:600px;
+  margin:auto;
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  margin:8px 0 15px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+textarea{
+  height:120px;
+}
+
+button{
+  background:#083b7a;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+button:hover{
+  background:#062b5a;
+}
+
+/* LOGIN */
+.login-area{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.login-card{
+  width:350px;
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,.12);
+  text-align:center;
+}
+
+.login-card h3{
+  color:#083b7a;
+  margin-bottom:15px;
+}
+
+/* CONTACT */
+.contact{
+  background:#083b7a;
+  color:white;
+}
+
+.contact h2{
+  color:#f4c542;
+}
+
+/* FOOTER */
+footer{
+  background:#041f42;
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+header{
+  justify-content:center;
+  text-align:center;
+}
+
+.brand{
+  justify-content:center;
+}
+
+nav{
+  justify-content:center;
+  margin-top:15px;
+}
+
+.hero h2{
+  font-size:28px;
+}
+
+section{
+  padding:45px 5%;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+<div class="brand">
+
+<div class="logo">BCHS</div>
+
+<div>
+<h1>Blesson Convent High School</h1>
+<p>Tundri, Bilaigarh, Chhattisgarh</p>
+</div>
+
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#facilities">Facilities</a>
+<a href="#gallery">Gallery</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+<h2>Welcome to Blesson Convent High School</h2>
+
+<p>Education • Discipline • Excellence</p>
+
+<a href="#admission" class="btn">Apply for Admission</a>
+
+<a href="#login" class="btn">Student Login</a>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+<h2 class="section-title">About Our School</h2>
+
+<p class="center">
+Blesson Convent High School is committed to providing quality education
+and creating a strong foundation for the future of every student.
+</p>
+
+<br>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎓 Quality Education</h3>
+<p>Providing quality learning from Nursery to 10th Standard.</p>
+</div>
+
+<div class="card">
+<h3>🌟 Our Vision</h3>
+<p>To develop confident, responsible and successful students.</p>
+</div>
+
+<div class="card">
+<h3>📚 Our Mission</h3>
+<p>To provide knowledge, discipline and excellent education.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRINCIPAL -->
+<section>
+
+<h2 class="section-title">Principal's Message</h2>
+
+<div class="principal">
+
+<h3>Mrs. Rajani Azad</h3>
+
+<br>
+
+<p>
+Welcome to Blesson Convent High School. Our aim is to provide
+quality education and help every student achieve their dreams.
+We believe in education, discipline and overall development.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CLASSES -->
+<section>
+
+<h2 class="section-title">Classes Available</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Nursery & KG</h3>
+<p>Strong foundation for young learners.</p>
+</div>
+
+<div class="card">
+<h3>Primary Classes</h3>
+<p>Academic and personal development.</p>
+</div>
+
+<div class="card">
+<h3>Middle School</h3>
+<p>Building knowledge and confidence.</p>
+</div>
+
+<div class="card">
+<h3>High School</h3>
+<p>Classes available up to 10th Standard.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FACILITIES -->
+<section id="facilities">
+
+<h2 class="section-title">Our Facilities</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏫 Safe Campus</h3>
+<p>A safe and disciplined learning environment.</p>
+</div>
+
+<div class="card">
+<h3>👩‍🏫 Teachers</h3>
+<p>Dedicated teachers supporting students.</p>
+</div>
+
+<div class="card">
+<h3>📖 Learning</h3>
+<p>Focus on education and student development.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NOTICE -->
+<section>
+
+<h2 class="section-title">Notice Board</h2>
+
+<div class="notice">
+
+<h3>📢 Latest Announcement</h3>
+
+<p>
+Admissions are open for Nursery to 10th Standard.
+Please contact the school office for more information.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+<h2 class="section-title">School Gallery</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+School Photo 1
+</div>
+
+<div class="gallery-item">
+School Photo 2
+</div>
+
+<div class="gallery-item">
+School Activity
+</div>
+
+</div>
+
+<p class="center" style="margin-top:20px;">
+School photos can be uploaded later.
+</p>
+
+</section>
+
+
+<!-- ADMISSION -->
+<section id="admission">
+
+<h2 class="section-title">Admission Inquiry</h2>
+
+<div class="form-box">
+
+<form onsubmit="sendAdmission(event)">
+
+<label>Student Name</label>
+<input type="text" required>
+
+<label>Parent Name</label>
+<input type="text" required>
+
+<label>Mobile Number</label>
+<input type="tel" required>
+
+<label>Class Required</label>
+
+<select>
+<option>Nursery</option>
+<option>KG</option>
+<option>1st Standard</option>
+<option>2nd Standard</option>
+<option>3rd Standard</option>
+<option>4th Standard</option>
+<option>5th Standard</option>
+<option>6th Standard</option>
+<option>7th Standard</option>
+<option>8th Standard</option>
+<option>9th Standard</option>
+<option>10th Standard</option>
+</select>
+
+<label>Message</label>
+<textarea placeholder="Write your inquiry"></textarea>
+
+<button type="submit">Submit Inquiry</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- LOGIN -->
+<section id="login">
+
+<h2 class="section-title">School Portal</h2>
+
+<div class="login-area">
+
+<div class="login-card">
+
+<h3>🎓 Student Login</h3>
+
+<input type="text" placeholder="Student ID">
+
+<input type="password" placeholder="Password">
+
+<button onclick="studentLogin()">Login</button>
+
+</div>
+
+
+<div class="login-card">
+
+<h3>🏫 School Admin Login</h3>
+
+<input type="text" placeholder="Username">
+
+<input type="password" placeholder="Password">
+
+<button onclick="adminLogin()">Login</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- JOB -->
+<section>
+
+<h2 class="section-title">Teachers & Job Opportunities</h2>
+
+<div class="form-box">
+
+<p class="center">
+Interested teachers can contact the school administration
+for current job opportunities.
+</p>
+
+<br>
+
+<button onclick="alert('Please contact the school administration for job opportunities.')">
+Apply for Job
+</button>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="center">
+
+<p><strong>Principal:</strong> Mrs. Rajani Azad</p>
+
+<br>
+
+<p>📞 +91 7724002005</p>
+<p>📞 +91 7223907610</p>
+
+<br>
+
+<p>📧 blessonconventhighschool@gmail.com</p>
+
+<br>
+
+<p>
+📍 Blesson Convent High School<br>
+Village Tundri, Block Bilaigarh<br>
+District Sarangarh Bilaigarh<br>
+Chhattisgarh – 493338
+</p>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<p>
+© 2026 Blesson Convent High School
+</p>
+
+<p>
+Tundri, Bilaigarh, Chhattisgarh
+</p>
+
+</footer>
+
+
+<script>
+
+function studentLogin(){
+alert("Student login system will be connected with database later.");
+}
+
+function adminLogin(){
+alert("Admin login system will be connected with database later.");
+}
+
+function sendAdmission(event){
+
+event.preventDefault();
+
+alert("Thank you! Your admission inquiry has been submitted.");
+
+}
+
+</script>
+
+</body>
+</html>
