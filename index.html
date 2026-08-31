@@ -103,5 +103,46 @@ function submitAdmission(e){
  alert("Thank you! Your admission inquiry has been received. Please contact the school for confirmation.");
  e.target.reset();
 }
+<section id="login" style="padding:50px 20px; text-align:center; background:#f4f4f4;">
+    <h2>🔐 School Portal Login</h2>
+    <p>Select your login portal</p>
+
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+
+        <!-- School Login -->
+        <div style="background:white; padding:30px; border-radius:15px; width:280px;">
+            <h3>🏫 School Login</h3>
+            <p>For Principal & School Staff</p>
+
+            <input type="text" placeholder="Username"
+            style="width:90%; padding:12px; margin:8px;">
+
+            <input type="password" placeholder="Password"
+            style="width:90%; padding:12px; margin:8px;">
+
+            <button style="padding:12px 25px; background:#0b5ed7; color:white; border:none; border-radius:5px;">
+                Login
+            </button>
+        </div>
+
+        <!-- Student Login -->
+        <div style="background:white; padding:30px; border-radius:15px; width:280px;">
+            <h3>🎓 Student Login</h3>
+            <p>For Nursery to Class 10 Students</p>
+
+            <input type="text" placeholder="Student ID / Admission Number"
+            style="width:90%; padding:12px; margin:8px;">
+
+            <input type="password" placeholder="Password"
+            style="width:90%; padding:12px; margin:8px;">
+
+            <button style="padding:12px 25px; background:#198754; color:white; border:none; border-radius:5px;">
+                Student Login
+            </button>
+        </div>
+
+    </div>
+</section>
 </script>
 </body></html>
+
