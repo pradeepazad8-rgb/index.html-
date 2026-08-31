@@ -1,1 +1,1 @@
-# BLESSON-school.
+# BLESSON-SCHOOL.
